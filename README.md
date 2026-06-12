@@ -105,6 +105,6 @@ Through this project, I gained practical experience in:
 
 ## ✅ Conclusion
 
-This project provided hands-on experience with the fundamental stages of the data analysis workflow, including data exploration, preprocessing, and visualization. It strengthened my understanding of Python-based data analysis and real-world dataset handling.
+This project provided practical experience in the core stages of the data analysis process, including data exploration, data cleaning, and data visualization. By working with the Titanic dataset, I developed a better understanding of handling real-world data, managing missing values, and extracting meaningful insights through visual analysis.
 
----
+The project strengthened my skills in Python, Pandas, Matplotlib, and Seaborn while demonstrating the importance of data preprocessing in producing reliable analytical results. Overall, this analysis served as a valuable foundation for further learning in data analytics and data science.
