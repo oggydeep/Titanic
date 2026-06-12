@@ -1,28 +1,29 @@
-# 🚢 Titanic Data Analysis using Python
+# 🚢 Titanic Data Analysis
 
 ## 📌 Project Overview
 
-This project focuses on analyzing the Titanic dataset using Python. The objective was to perform data exploration, data cleaning, and data visualization to gain meaningful insights from the dataset.
+This project analyzes the Titanic dataset using Python to perform data exploration, preprocessing, and visualization. The objective was to understand the dataset, clean missing data, and derive meaningful insights through exploratory data analysis.
 
 ---
 
-## 🎯 Task Objectives
+## 🎯 Objectives
 
-* Analyze a given CSV dataset.
-* Perform basic data exploration and preprocessing.
-* Create and present 3 meaningful visualizations with insights.
+* Analyze a CSV dataset.
+* Perform data exploration and preprocessing.
+* Create meaningful visualizations.
+* Extract insights from the data.
 
 ---
 
 ## 📂 Dataset
 
-**Dataset Used:** Titanic.csv
+**Dataset:** Titanic.csv
 
-The Titanic dataset contains passenger information such as age, gender, passenger class, fare, and survival status.
+The dataset contains passenger information including demographic details, ticket information, passenger class, and survival status.
 
 ---
 
-## 🛠️ Tools & Technologies Used
+## 🛠️ Technologies Used
 
 * Python
 * Pandas
@@ -35,172 +36,75 @@ The Titanic dataset contains passenger information such as age, gender, passenge
 
 ## 🔍 Data Exploration
 
-The dataset was loaded using Pandas and explored to understand its structure.
+The following exploratory analysis was performed:
 
-### Steps Performed
-
-```python
-import pandas as pd
-
-df = pd.read_csv("Titanic.csv")
-
-print(df.head())
-print(df.info())
-print(df.describe())
-print(df.isnull().sum())
-```
-
-The following checks were performed:
-
-* Number of rows and columns
-* Data types of columns
-* Missing values
-* Basic statistical summary
+* Examined dataset structure and dimensions.
+* Reviewed column data types.
+* Generated descriptive statistics.
+* Identified missing values.
+* Checked for duplicate records.
 
 ---
 
-## 🧹 Data Cleaning & Preprocessing
+## 🧹 Data Preprocessing
 
-### Handling Missing Values
+Data quality was improved through the following steps:
 
-```python
-df["Age"].fillna(df["Age"].median(), inplace=True)
-
-df["Embarked"].fillna(df["Embarked"].mode()[0], inplace=True)
-```
-
-### Removing Duplicate Records
-
-```python
-df.drop_duplicates(inplace=True)
-```
-
-### Verifying Missing Values
-
-```python
-print(df.isnull().sum())
-```
+* Filled missing values in the **Age** column using the median value.
+* Filled missing values in the **Embarked** column using the mode.
+* Removed duplicate records.
+* Verified data consistency after preprocessing.
 
 ---
 
-## 📊 Data Visualizations
+## 📊 Visualizations and Insights
 
-### 1️⃣ Survival Distribution
+### 1. Survival Distribution
 
-```python
-import matplotlib.pyplot as plt
-import seaborn as sns
+Analyzed the distribution of passengers who survived and those who did not.
 
-sns.countplot(x="Survived", data=df)
-plt.title("Survival Distribution")
-plt.show()
-```
+**Key Insight:**
+The number of passengers who did not survive was significantly higher than the number of survivors.
 
-### Insight
+### 2. Gender Distribution
 
-* More passengers died than survived.
-* Survival rate was lower than the mortality rate.
+Analyzed the distribution of passengers based on gender.
 
----
+**Key Insight:**
+Male passengers represented the majority of passengers in the dataset.
 
-### 2️⃣ Gender Distribution
+### 3. Passenger Class Distribution
 
-```python
-sns.countplot(x="Sex", data=df)
-plt.title("Gender Distribution")
-plt.show()
-```
+Analyzed the distribution of passengers across travel classes.
 
-### Insight
-
-* Male passengers were more than female passengers.
-* The dataset shows a noticeable gender imbalance.
-
----
-
-### 3️⃣ Passenger Class Distribution
-
-```python
-sns.countplot(x="Pclass", data=df)
-plt.title("Passenger Class Distribution")
-plt.show()
-```
-
-### Insight
-
-* Most passengers traveled in Third Class.
-* First Class had the smallest number of passengers.
+**Key Insight:**
+Third Class contained the highest number of passengers, while First Class had the lowest.
 
 ---
 
 ## 📈 Key Findings
 
-* The majority of passengers did not survive.
+* Most passengers did not survive the disaster.
 * Male passengers outnumbered female passengers.
-* Third Class contained the highest number of passengers.
-* Data cleaning improved dataset quality for analysis.
+* Third Class was the most common travel class.
+* Data preprocessing improved dataset quality and reliability.
 
 ---
 
-## 🎓 What I Learned
+## 🎓 Learning Outcomes
 
-Through this project, I learned:
+Through this project, I gained practical experience in:
 
-* How to load CSV datasets using Pandas.
-* How to explore and understand datasets.
-* How to identify and handle missing values.
-* How to remove duplicate records.
-* How to create visualizations using Matplotlib and Seaborn.
-* How to derive meaningful insights from data.
+* Data loading and exploration using Pandas.
+* Handling missing values and duplicate records.
+* Data cleaning and preprocessing techniques.
+* Creating visualizations using Matplotlib and Seaborn.
+* Interpreting data and communicating insights effectively.
 
----
-
-## 📁 Project Structure
-
-```text
-Titanic-Data-Analysis/
-│
-├── Titanic.csv
-├── task 1 completed.ipynb
-├── README.md
-├── survival_distribution.png
-├── gender_distribution.png
-└── passenger_class_distribution.png
 ```
-
----
-
-## 📷 Visualization Outputs
-
-### Survival Distribution
-
-![Survival Distribution](survival_distribution.png)
-
-### Gender Distribution
-
-![Gender Distribution](gender_distribution.png)
-
-### Passenger Class Distribution
-
-![Passenger Class Distribution](passenger_class_distribution.png)
-
----
 
 ## ✅ Conclusion
 
-This project provided hands-on experience with the complete data analysis workflow, including data exploration, preprocessing, and visualization. It strengthened my understanding of Python-based data analysis and helped me gain practical experience working with real-world datasets.
+This project provided hands-on experience with the fundamental stages of the data analysis workflow, including data exploration, preprocessing, and visualization. It strengthened my understanding of Python-based data analysis and real-world dataset handling.
 
 ---
-
-## 👨‍💻 Author
-
-**Deep Dnath**
-
-BBA Student | Aspiring Data Analyst
-
-Currently Learning:
-
-* Python
-* SQL
-* Power BI
-* Data Analytics
